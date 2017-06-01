@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace DomainModel
 {
-    class Orders
+    public class Orders
     {
         public int Id { get; set; }
         public int ClientId { get; set; }
