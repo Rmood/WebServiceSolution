@@ -11,5 +11,6 @@ namespace DataAccessLayer
     public interface IDataService
     {
         IList<Product> GetProducts();
+        Product GetProduct(int id);
     }
 }
