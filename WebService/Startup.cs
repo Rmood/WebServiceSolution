@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using DomainModel;
+using WebService.Models;
+using AutoMapper;
 
 namespace WebService
 {
@@ -39,6 +42,13 @@ namespace WebService
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<Product, ProductListModel>();
+                cfg.CreateMap<Product, ProductModel>();
+                cfg.CreateMap<Product, ProductCreateModel>();
+            });
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
