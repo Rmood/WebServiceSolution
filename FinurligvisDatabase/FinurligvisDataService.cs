@@ -25,5 +25,14 @@ namespace FinurligvisDatabase
                 return context.Products.Find(id);
             }
         }
+
+        public void CreateProduct(Product product)
+        {
+            using (var context = new FinurligvisContext())
+            {
+                context.Products.Add(product);
+                context.SaveChanges();
+            }
+        }
     }
 }
