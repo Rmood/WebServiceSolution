@@ -34,5 +34,30 @@ namespace FinurligvisDatabase
                 context.SaveChanges();
             }
         }
+
+        public IList<Client> GetClients()
+        {
+            using (var context = new FinurligvisContext())
+            {
+                return context.Clients.ToList();
+            }  
+        }
+
+        public Client GetClient(int id)
+        {
+            using (var context = new FinurligvisContext())
+            {
+                return context.Clients.Find(id);
+            }
+        }
+
+        public void CreateClient(Client client)
+        {
+            using (var context = new FinurligvisContext())
+            {
+                context.Clients.Add(client);
+                context.SaveChanges();
+            }
+        }
     }
 }

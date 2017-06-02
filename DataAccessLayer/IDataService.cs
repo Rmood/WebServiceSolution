@@ -13,5 +13,9 @@ namespace DataAccessLayer
         IList<Product> GetProducts();
         Product GetProduct(int id);
         void CreateProduct(Product product);
+
+        IList<Client> GetClients();
+        Client GetClient(int id);
+        void CreateClient(Client client);
     }
 }

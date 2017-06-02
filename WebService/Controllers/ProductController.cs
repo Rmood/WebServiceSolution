@@ -12,11 +12,11 @@ using AutoMapper;
 namespace WebService.Controllers
 {
     [Route("api/products")]
-    public class ProductsController : Controller
+    public class ProductController : Controller
     {
         private readonly IDataService _dataService;
 
-        public ProductsController(IDataService dataService)
+        public ProductController(IDataService dataService)
         {
             _dataService = dataService;
         }

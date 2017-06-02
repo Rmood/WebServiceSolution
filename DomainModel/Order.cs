@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace DomainModel
 {
-    public class Orders
+    public class Order
     {
         public int Id { get; set; }
         public int ClientId { get; set; }

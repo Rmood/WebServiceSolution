@@ -48,6 +48,10 @@ namespace WebService
                 cfg.CreateMap<Product, ProductListModel>();
                 cfg.CreateMap<Product, ProductModel>();
                 cfg.CreateMap<ProductCreateModel, Product>();
+
+                cfg.CreateMap<Client, ClientModel>();
+                cfg.CreateMap<Client, ClientListModel>();
+                cfg.CreateMap<ClientCreateModel, Client>(); 
             });
             if (env.IsDevelopment())
             {
