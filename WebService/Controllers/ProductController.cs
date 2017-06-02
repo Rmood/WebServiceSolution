@@ -12,11 +12,11 @@ using AutoMapper;
 namespace WebService.Controllers
 {
     [Route("api/products")]
-    public class ProductsController : Controller
+    public class ProductController : Controller
     {
         private readonly IDataService _dataService;
 
-        public ProductsController(IDataService dataService)
+        public ProductController(IDataService dataService)
         {
             _dataService = dataService;
         }
@@ -47,7 +47,7 @@ namespace WebService.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateProduct(ProductCreateModel model)
+        public IActionResult CreateProduct([FromBody]ProductCreateModel model)
         {
             if (model == null) return BadRequest();
             var product = Mapper.Map<Product>(model);
