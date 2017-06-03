@@ -5,10 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\**" />
-    <Content Remove="wwwroot\**" />
-    <EmbeddedResource Remove="wwwroot\**" />
-    <None Remove="wwwroot\**" />
+    <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\js\app\__dummy__" />
+    <Content Include="wwwroot\js\main.js" />
+    <Content Include="wwwroot\js\__dummy__" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.0.2" />
@@ -25,6 +25,9 @@
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
     <ProjectReference Include="..\DomainModel\DomainModel.csproj" />
     <ProjectReference Include="..\FinurligvisDatabase\FinurligvisDatabase.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\js\lib\" />
   </ItemGroup>
 
 </Project>
