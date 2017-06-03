@@ -87,7 +87,7 @@ namespace FinurligvisDatabase
                
         }
 
-        public IList<Category> GetCategory()
+        public IList<Category> GetCategorys()
         {
             using (var context = new FinurligvisContext())
             {
