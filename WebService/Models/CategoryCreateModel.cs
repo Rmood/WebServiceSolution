@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace DomainModel
+namespace WebService.Models
 {
-    public class Category
+    public class CategoryCreateModel
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public int? ParentId { get; set; }
     }

@@ -17,5 +17,13 @@ namespace DataAccessLayer
         IList<Client> GetClients();
         Client GetClient(int id);
         void CreateClient(Client client);
+
+        IList<Order> GetOrders();
+        Order GetOrder(int id);
+        void CreateOrder(Order order);
+
+        IList<Category> GetCategory();
+        Category GetCategory(int id);
+        void CreateCategory(Category category);
     }
 }

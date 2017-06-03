@@ -59,5 +59,58 @@ namespace FinurligvisDatabase
                 context.SaveChanges();
             }
         }
+
+        public IList<Order> GetOrders()
+        {
+            using (var context = new FinurligvisContext())
+            {
+                return context.Orders.ToList();
+            }
+
+        }
+        public Order GetOrder(int id)
+        {
+            using (var context = new FinurligvisContext())
+            {
+                return context.Orders.Find(id);
+            }
+               
+        }
+
+        public void CreateOrder(Order order)
+        {
+            using (var context = new FinurligvisContext())
+            {
+                context.Orders.Add(order);
+                context.SaveChanges();
+            }
+               
+        }
+
+        public IList<Category> GetCategory()
+        {
+            using (var context = new FinurligvisContext())
+            {
+                return context.Categorys.ToList();
+            }
+
+        }
+
+        public Category GetCategory(int id)
+        {
+            using (var context = new FinurligvisContext())
+            {
+                return context.Categorys.Find(id);
+            }   
+        }
+
+        public void CreateCategory(Category category)
+        {
+           using (var context = new FinurligvisContext()) 
+            {
+                context.Categorys.Add(category);
+                context.SaveChanges();
+            }
+        }
     }
 }

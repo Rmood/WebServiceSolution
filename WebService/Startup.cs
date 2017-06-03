@@ -51,7 +51,15 @@ namespace WebService
 
                 cfg.CreateMap<Client, ClientModel>();
                 cfg.CreateMap<Client, ClientListModel>();
-                cfg.CreateMap<ClientCreateModel, Client>(); 
+                cfg.CreateMap<ClientCreateModel, Client>();
+
+                cfg.CreateMap<Order, OrderModel>();
+                cfg.CreateMap<Order, OrderListModel>();
+                cfg.CreateMap<OrderCreateModel, Order>();
+
+                cfg.CreateMap<Category, CategoryModel>();
+                cfg.CreateMap<Category, CategoryListModel>();
+                cfg.CreateMap<CategoryCreateModel, Category>();
             });
             if (env.IsDevelopment())
             {
