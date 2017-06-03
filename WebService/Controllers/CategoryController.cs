@@ -11,7 +11,7 @@ using AutoMapper;
 
 namespace WebService.Controllers
 {
-    [Route("api/categorys")]
+    [Route("api/categories")]
     public class CategoryController : Controller
     {
         private readonly IDataService _dataService;
@@ -22,9 +22,9 @@ namespace WebService.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetCategorys()
+        public IActionResult GetCategories()
         {
-            var data = _dataService.GetCategorys();
+            var data = _dataService.GetCategories();
             //var result = data.Select(x => new ClientListModel {Id = x.Id, Name = x.Name, Description = x.Description});
             var result = Mapper.Map<IEnumerable<CategoryModel>>(data);
             return Ok(result);

@@ -22,7 +22,7 @@ namespace DataAccessLayer
         Order GetOrder(int id);
         void CreateOrder(Order order);
 
-        IList<Category> GetCategorys();
+        IList<Category> GetCategories();
         Category GetCategory(int id);
         void CreateCategory(Category category);
     }

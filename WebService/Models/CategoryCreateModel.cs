@@ -9,6 +9,6 @@ namespace WebService.Models
     public class CategoryCreateModel
     {
         public string Name { get; set; }
-        public int? ParentId { get; set; }
+        public int ParentId { get; set; }
     }
 }

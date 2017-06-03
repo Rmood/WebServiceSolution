@@ -33,8 +33,8 @@ namespace WebService.Controllers
         [HttpGet("{id}")]
         public IActionResult GetOrder(int id)
         {
-            var client = _dataService.GetClient(id);
-            if (client == null) return NotFound();
+            var order = _dataService.GetOrder(id);
+            if (order == null) return NotFound();
             //var model = new OrderListModel()
             //{
             //    Id = client.Id,
@@ -42,7 +42,7 @@ namespace WebService.Controllers
             //    Description = client.Description
             //};
 
-            var model = Mapper.Map<OrderListModel>(client);
+            var model = Mapper.Map<OrderListModel>(order);
             return Ok(model);
         }
 

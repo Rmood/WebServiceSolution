@@ -87,11 +87,11 @@ namespace FinurligvisDatabase
                
         }
 
-        public IList<Category> GetCategorys()
+        public IList<Category> GetCategories()
         {
             using (var context = new FinurligvisContext())
             {
-                return context.Categorys.ToList();
+                return context.Categories.ToList();
             }
 
         }
@@ -100,7 +100,7 @@ namespace FinurligvisDatabase
         {
             using (var context = new FinurligvisContext())
             {
-                return context.Categorys.Find(id);
+                return context.Categories.Find(id);
             }   
         }
 
@@ -108,7 +108,7 @@ namespace FinurligvisDatabase
         {
            using (var context = new FinurligvisContext()) 
             {
-                context.Categorys.Add(category);
+                context.Categories.Add(category);
                 context.SaveChanges();
             }
         }
