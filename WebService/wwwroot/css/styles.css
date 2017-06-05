@@ -29,6 +29,15 @@ span img {
 .kurv {
 	text-align: center;
 }
+
+.by {
+    width: 100%;
+}
+
+.kommersnart {
+    width: 40px;
+    margin: 0 auto;
+}
   
 
 /* The side navigation menu */
@@ -85,6 +94,7 @@ footer {
 	bottom: 0;
 	margin-bottom: 0;
 	width: 100%;
+    background-image: url("../images/footer.png");
 }
 
 footer p {

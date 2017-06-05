@@ -5,8 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\blog.html" />
     <Content Include="wwwroot\css\bootstrap.min.css" />
     <Content Include="wwwroot\css\bootstrap.min.css.map" />
+    <Content Include="wwwroot\css\footer.png" />
     <Content Include="wwwroot\css\style.css" />
     <Content Include="wwwroot\fonts\__dummy__" />
     <Content Include="wwwroot\images\1006f8fc90b1ead2283fab335a2fa39c.jpg" />
@@ -21,9 +23,11 @@
     <Content Include="wwwroot\images\dukke.PNG" />
     <Content Include="wwwroot\images\elefant.PNG" />
     <Content Include="wwwroot\images\flyingfish.PNG" />
+    <Content Include="wwwroot\images\footer.png" />
     <Content Include="wwwroot\images\ko.jpg" />
     <Content Include="wwwroot\images\lady.PNG" />
     <Content Include="wwwroot\images\luftballon.wm.jpg" />
+    <Content Include="wwwroot\images\maler.png" />
     <Content Include="wwwroot\images\menu.png" />
     <Content Include="wwwroot\images\orchestra.PNG" />
     <Content Include="wwwroot\images\ornament.PNG" />
@@ -39,6 +43,7 @@
     <Content Include="wwwroot\js\app\components\products.html" />
     <Content Include="wwwroot\js\app\components\products.js" />
     <Content Include="wwwroot\js\app\test.js" />
+    <Content Include="wwwroot\js\blog.html" />
     <Content Include="wwwroot\js\lib\jQuery\dist\jquery-3.2.1.min.js" />
     <Content Include="wwwroot\js\lib\jQuery\dist\jquery.min.js" />
     <Content Include="wwwroot\js\main.js" />

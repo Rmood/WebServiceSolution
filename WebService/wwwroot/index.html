@@ -16,14 +16,6 @@
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	  <a href="index.html">Forside</a>
-	  					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkter<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="prints.html">Prints</a></li>
-								<li><a href="#">Ornaments</a></li>
-								<li><a href="#">Tote bags</a></li>
-							</ul>
-					</li>
 	  <a href="produkter.html">Produkter</a>
 	  <a href="omos.html">Om Os</a>
 	  <a href="kontakt.html">Kontakt</a>
@@ -41,7 +33,7 @@
 
 
 	
-	<!--start carousel media galler -->
+	<!--start media galleri -->
 	
 
 <div class="container">
@@ -54,21 +46,19 @@
 	</div>
 </div>
 
-<!--Slut carousel media gallery -->
+<!--Slut media gallery -->
 	
 </section>
 
-<hr>
+    <product></product>
 
 <!-- Footer-->
+    <img src="images/footer.png" style=" width: 100%">
 
 <div>
-<footer class="main-footer"><p class="text-muted">&copy; Finurligvis 2017</p></footer>
+<footer class=""><p class="text-muted">&copy; Finurligvis 2017</p></footer>
 </div>
 
-
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
 
 
 	<script>
@@ -80,6 +70,8 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+    <script src="js/main.js"></script>
+    <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
 
 </body>
 </html>
