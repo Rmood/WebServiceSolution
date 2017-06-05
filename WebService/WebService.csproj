@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\css\style.css" />
     <Content Include="wwwroot\index.html" />
     <Content Include="wwwroot\js\app\components\categories.html" />
     <Content Include="wwwroot\js\app\components\categories.js" />
@@ -17,6 +18,7 @@
     <Content Include="wwwroot\js\app\test.js" />
     <Content Include="wwwroot\js\main.js" />
     <Content Include="wwwroot\js\services\dataService.js" />
+    <Content Include="wwwroot\style.css" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.0.2" />
