@@ -5,7 +5,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\css\bootstrap.min.css" />
+    <Content Include="wwwroot\css\bootstrap.min.css.map" />
     <Content Include="wwwroot\css\style.css" />
+    <Content Include="wwwroot\fonts\__dummy__" />
+    <Content Include="wwwroot\images\1006f8fc90b1ead2283fab335a2fa39c.jpg" />
+    <Content Include="wwwroot\images\angel.PNG" />
+    <Content Include="wwwroot\images\Asset 110.jpg" />
+    <Content Include="wwwroot\images\BSCT_STNE_SLVR_01_PROD_0000_1024x1024.jpg" />
+    <Content Include="wwwroot\images\cards.PNG" />
+    <Content Include="wwwroot\images\Carousel_Placeholder.png" />
+    <Content Include="wwwroot\images\clown.PNG" />
+    <Content Include="wwwroot\images\clowngirl.PNG" />
+    <Content Include="wwwroot\images\dinosaur.PNG" />
+    <Content Include="wwwroot\images\dukke.PNG" />
+    <Content Include="wwwroot\images\elefant.PNG" />
+    <Content Include="wwwroot\images\flyingfish.PNG" />
+    <Content Include="wwwroot\images\ko.jpg" />
+    <Content Include="wwwroot\images\lady.PNG" />
+    <Content Include="wwwroot\images\luftballon.wm.jpg" />
+    <Content Include="wwwroot\images\menu.png" />
+    <Content Include="wwwroot\images\orchestra.PNG" />
+    <Content Include="wwwroot\images\ornament.PNG" />
+    <Content Include="wwwroot\images\os.jpg" />
+    <Content Include="wwwroot\images\seagull.PNG" />
     <Content Include="wwwroot\index.html" />
     <Content Include="wwwroot\js\app\components\categories.html" />
     <Content Include="wwwroot\js\app\components\categories.js" />
@@ -20,7 +43,6 @@
     <Content Include="wwwroot\js\lib\jQuery\dist\jquery.min.js" />
     <Content Include="wwwroot\js\main.js" />
     <Content Include="wwwroot\js\services\dataService.js" />
-    <Content Include="wwwroot\style.css" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.0.2" />

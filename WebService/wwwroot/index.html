@@ -1,23 +1,85 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html>
 <head>
-    <title>index</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Finurligvis</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
 <body>
-    <h1>I am index.html</h1>
 
-    <products data-bind="visible: true"></products>
+<header>
+	<!--Navigation -->
+	
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html">Forside</a>
+	  					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkter<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="prints.html">Prints</a></li>
+								<li><a href="#">Ornaments</a></li>
+								<li><a href="#">Tote bags</a></li>
+							</ul>
+					</li>
+	  <a href="produkter.html">Produkter</a>
+	  <a href="omos.html">Om Os</a>
+	  <a href="kontakt.html">Kontakt</a>
+	  <a href="blog.html">Blog</a>
+</div>
 
-    <orders data-bind="visible: false"></orders>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="img-responsive m-t-3" src="images/menu.png" alt="Menu"></span>
+	
+	<div class="text-center">
+	<h1 class="pb-5">Finurligvis</h1>
+	</div>
+</header>
 
-    <clients></clients>
-    
-    <categories></categories>
+<section>
 
 
+	
+	<!--start carousel media galler -->
+	
 
-    <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
+<div class="container">
+	<div class="row">
+		<div>
+			<a href="prints.html"><img class="col-md-4" src="images/dukke.PNG"></a>
+			<a href="ornaments.html"><img class="col-md-4" src="images/ko.jpg"></a>
+			<a href="totebags.html"><img class="col-md-4" src="images/dukke.PNG"></a>
+		</div>
+	</div>
+</div>
+
+<!--Slut carousel media gallery -->
+	
+</section>
+
+<hr>
+
+<!-- Footer-->
+
+<div>
+<footer class="main-footer"><p class="text-muted">&copy; Finurligvis 2017</p></footer>
+</div>
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+	<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
 </body>
 </html>

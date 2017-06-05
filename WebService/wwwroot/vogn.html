@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<header>
+
+		<!--Navbar -->
+		<nav class="nav navbar-default">
+			<div class="container">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			</div>	
+
+			<div class="collapse navbar-collapse" id="myNavba">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Forside</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkter<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="prints.html">Prints</a></li>
+								<li><a href="#">Ornaments</a></li>
+								<li><a href="#">Tote bags</a></li>
+							</ul>
+					</li>
+					<li><a href="#">Om finurligvis</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input class="form-control" type="text" name="search" placeholder="Søg">
+					</div>
+					<button type="submit" class="btn btn-default">Søg</button>
+				</form>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="vogn.html"><span class="glyphicon glyphicon-shopping-cart"> Kurv</span></a></li>
+				</ul>
+				</div>
+			</div>
+		</nav>
+	<!-- Navbar slut-->
+
+	
+	<h1>Finurligvis</h1>
+</header>
+
+
+<article class="index-table">
+	<div class="container">
+		<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+			<tr class="info">
+				<th>#</th>
+				<th>Navn</th>
+				<th>Pris</th>
+				<th>Antal</th>
+				<th>Total</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<th class="row"><img class="engel" src="images/angel.PNG"></th>
+				<td>Dukke</td>
+				<td>300,00 DKK</td>
+				<td>
+					<form>
+						<div class="form-group">
+							<input type="number" min="0" max="30">
+						</div>
+				    </form>
+			    </td>
+				<td>300,00 DKK</td>
+			</tr>
+			<tr>
+				<th class="row"><img class="ballon" src="images/luftballon.wm.jpg"></th>
+				<td>Plakat</td>
+				<td>250,00 DKK</td>
+				<td>2</td>
+				<td>250,00 DKK</td>
+			</tr>
+			</tbody>
+		</table>
+		</div>
+		<form>
+				<button class="btn right" type="submit"><a href="betaling.html">Gå til kassen</a></button>
+				<button class="btn right" type="submit"><a href="betaling.html">Opdater kurv</a></button>
+			</form>
+	</div>	
+</article>
+
+<!-- Footer-->
+
+<div>
+<footer class="main-footer"><p>&copy; Finurligvis 2017</p></footer>
+</div>
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

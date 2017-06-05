@@ -6,6 +6,7 @@
     "requirejs": "2.3.3",
     "jQuery": "3.2.1",
     "text": "requirejs-text#2.0.15",
-    "knockout-mapping": "2.4.1"
+    "knockout-mapping": "2.4.1",
+    "bootstrap": "v4.0.0-alpha.6"
   }
 }
