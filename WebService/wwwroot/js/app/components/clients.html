@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>clients</title>
+</head>
+<body>
+    <h2>I am Clients.html</h2>
+    <ul data-bind="foreach: clients">
+        <li>
+            Name: <span data-bind="text: firstName"></span> &nbsp
+            <span data-bind="text: lastName"></span> ,
+            Email: <span data-bind="text: email"></span>
+        </li>
+    </ul>
+
+    <pre data-bind="text: ko.toJSON($data, null, 2)"></pre>
+</body>
+</html>

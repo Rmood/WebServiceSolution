@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>categories</title>
+</head>
+<body>
+    <h2>I am Categories.html</h2>
+    <ul data-bind="foreach: categories">
+        <li>
+            Name: <span data-bind="text: name"></span>            
+        </li>
+    </ul>
+
+    <pre data-bind="text: ko.toJSON($data, null, 2)"></pre>
+</body>
+</html>

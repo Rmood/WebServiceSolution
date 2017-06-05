@@ -6,9 +6,17 @@
 
   <ItemGroup>
     <Content Include="wwwroot\index.html" />
-    <Content Include="wwwroot\js\app\__dummy__" />
+    <Content Include="wwwroot\js\app\components\categories.html" />
+    <Content Include="wwwroot\js\app\components\categories.js" />
+    <Content Include="wwwroot\js\app\components\clients.html" />
+    <Content Include="wwwroot\js\app\components\clients.js" />
+    <Content Include="wwwroot\js\app\components\orders.html" />
+    <Content Include="wwwroot\js\app\components\orders.js" />
+    <Content Include="wwwroot\js\app\components\products.html" />
+    <Content Include="wwwroot\js\app\components\products.js" />
+    <Content Include="wwwroot\js\app\test.js" />
     <Content Include="wwwroot\js\main.js" />
-    <Content Include="wwwroot\js\__dummy__" />
+    <Content Include="wwwroot\js\services\dataService.js" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.0.2" />

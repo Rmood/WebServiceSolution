@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>products</title>
+</head>
+<body>
+    <h2>I am Products.html</h2>
+    <ul data-bind="foreach: products">
+        <li>
+            Name: <span data-bind="text: name"></span>  ,   
+            Description: <span data-bind="text: description"></span> ,  
+            Price: <span data-bind="text: price"></span>
+        </li>
+    </ul>
+
+    
+
+    <pre data-bind="text: ko.toJSON($data, null, 2)"></pre>
+</body>
+</html>
