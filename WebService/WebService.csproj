@@ -15,6 +15,8 @@
     <Content Include="wwwroot\js\app\components\products.html" />
     <Content Include="wwwroot\js\app\components\products.js" />
     <Content Include="wwwroot\js\app\test.js" />
+    <Content Include="wwwroot\js\lib\jQuery\dist\jquery-3.2.1.min.js" />
+    <Content Include="wwwroot\js\lib\jQuery\dist\jquery.min.js" />
     <Content Include="wwwroot\js\main.js" />
     <Content Include="wwwroot\js\services\dataService.js" />
   </ItemGroup>
@@ -33,9 +35,6 @@
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
     <ProjectReference Include="..\DomainModel\DomainModel.csproj" />
     <ProjectReference Include="..\FinurligvisDatabase\FinurligvisDatabase.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="wwwroot\js\lib\" />
   </ItemGroup>
 
 </Project>
